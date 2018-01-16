@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+
+        <title>Tic Tac Toe</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>        
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row text-center">
+                <div id="game-title">Tic Tac Toe Game made by Nivom</div>
+            </div>
+            <div id="settings-menu">
+                <div class="row text-center">
+                    <div class="col-sm-6 text-right marks" id="player-1-mark"></div>
+                    <div class="col-sm-6 text-left marks" id="player-2-mark"></div>
+                </div>
+                <div class="row text-center">
+                    <button class="btn btn-settings" id="btn-mark">Switch Marks</button>
+                </div>
+                <div class="row text-center">
+                    <button class="btn btn-settings" id="btn-play-mode">Player vs AI</button>
+                </div>
+                <div class="row text-center">
+                    <button class="btn btn-settings" id="btn-play-game">PLAY</button>
+                </div>
+                <div class="row text-center" id="turn"></div>
+            </div>
+            
+            <div class="row">
+                <div id="game-wrapper">
+                    <div class="row text-center">
+                        <div class="col-sm-4 grid-square" id="corner-TL">
+                        </div>
+                        <div class="col-sm-4 grid-square" id ="edge-T">
+                        </div>
+                        <div class="col-sm-4 grid-square" id="corner-TR">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-4 grid-square" id="edge-L">
+                        </div>
+                        <div class="col-sm-4 grid-square" id="center">  
+                        </div>
+                        <div class="col-sm-4 grid-square" id="edge-R">   
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-4 grid-square" id="corner-BL">
+                        </div>
+                        <div class="col-sm-4 grid-square" id="edge-B"> 
+                        </div>
+                        <div class="col-sm-4 grid-square" id="corner-BR">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p><em>Tip: "X" always starts first when playing against the AI !</em></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
